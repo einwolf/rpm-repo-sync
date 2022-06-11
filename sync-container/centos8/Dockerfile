@@ -1,4 +1,6 @@
-FROM docker.io/centos:8.5.2105
+# It seems centos:8.5.2111 wasn't built and 8.4 mirrors are offline.
+# It is problematic to get the last version of centos 8.
+FROM docker.io/centos:8.4.2105
 
 # EPEL and rpm-fusion
 RUN dnf install -y https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm \
