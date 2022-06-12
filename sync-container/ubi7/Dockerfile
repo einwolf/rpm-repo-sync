@@ -25,10 +25,10 @@ FROM registry.access.redhat.com/ubi7/ubi:7.9-712
 RUN yum install -y yum-utils createrepo rsync nano
 
 # UBI 7 doesn't have createrepo so use Centos's.
-RUN yum install -y \
-https://mirrors.edge.kernel.org/centos/7/os/x86_64/Packages/deltarpm-3.6-3.el7.x86_64.rpm \
-https://mirrors.edge.kernel.org/centos/7/os/x86_64/Packages/python-deltarpm-3.6-3.el7.x86_64.rpm \
-https://mirrors.edge.kernel.org/centos/7/os/x86_64/Packages/createrepo-0.9.9-28.el7.noarch.rpm
+#RUN yum install -y \
+#https://mirrors.edge.kernel.org/centos/7/os/x86_64/Packages/deltarpm-3.6-3.el7.x86_64.rpm \
+#https://mirrors.edge.kernel.org/centos/7/os/x86_64/Packages/python-deltarpm-3.6-3.el7.x86_64.rpm \
+#https://mirrors.edge.kernel.org/centos/7/os/x86_64/Packages/createrepo-0.9.9-28.el7.noarch.rpm
 
 RUN yum clean all
 

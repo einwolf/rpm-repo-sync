@@ -2,9 +2,9 @@ FROM registry.access.redhat.com/ubi8/ubi:8.6-754
 
 # Packages
 RUN dnf install -y \
-https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm \
-https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm \
-https://mirrors.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm
+    https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm \
+    https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm \
+    https://mirrors.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm
 RUN dnf install -y 'dnf-command(reposync)' nano rsync
 
 # Docker
