@@ -5,6 +5,7 @@ RUN dnf config-manager --enable powertools
 RUN dnf install -y epel-release epel-next-release
 RUN dnf install -y https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm \
                    https://mirrors.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm
+                   
 # Packages
 RUN dnf install -y 'dnf-command(reposync)' dnf-utils nano rsync
 
